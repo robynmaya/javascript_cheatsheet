@@ -1,6 +1,4 @@
-/*
-
-	  |	Scope 		| Reassignable 	 | Mutable | Temporal Dead Zone	
+/*	  |	Scope 		| Reassignable 	 | Mutable | Temporal Dead Zone	
 -------------------------------------------------------------
 const | Block 		|	No			 |	Yes	   |	Yes
 var   |	Function 	|	Yes			 |	Yes	   |	No
