@@ -67,7 +67,7 @@ console.log(myVar); // Throws a ReferenceError, myVar is not accessible outside 
 
 /* LET
 
-Let declared variable are block scoped, are not hoisted, can not be redclared in the same scope
+Let declared variable are block scoped, can not be redclared in the same scope
 
 */
 
@@ -82,6 +82,11 @@ function myFunction() {
 }
 console.log(myVar); // Throws a ReferenceError, myVar is not accessible outside the function.
 
+
+// Let is not hoisted 
+
+console.log(myDog); // a ReferenceError!
+let myDog = "Noodles"; // because the assignment happens after the variable gets called
 
 
 
