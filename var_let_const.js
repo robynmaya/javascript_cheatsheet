@@ -64,6 +64,12 @@ function myFunction() {
 }
 console.log(myVar); // Throws a ReferenceError, myVar is not accessible outside the function.
 
+// Var can be redeclared
+
+var myVar = 2;
+var myVar = 3;
+
+console.log(myVar) // 3
 
 /* LET
 
@@ -88,5 +94,9 @@ console.log(myVar); // Throws a ReferenceError, myVar is not accessible outside 
 console.log(myDog); // a ReferenceError!
 let myDog = "Noodles"; // because the assignment happens after the variable gets called
 
+// Let can not be redeclared 
+let myVar = 2;
+let myVar = 3;
 
+console.log(myVar) // SyntaxError: Duplicate declaration
 
