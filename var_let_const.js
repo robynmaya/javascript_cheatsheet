@@ -6,14 +6,6 @@ let   |	Block		|	Yes	     |	Yes	   |	Yes
 
 */
 
-const dog = "Noodles";
-dog = "Meow" // will raise an error - const is not reassignable 
-
-let dog = "Noodles";
-dog = "Meow"; // this is allowed! 
-
-////////
-
 /* VAR 
 
 var is functioned scoped and variables defined in the function
@@ -99,4 +91,18 @@ let myVar = 2;
 let myVar = 3;
 
 console.log(myVar) // SyntaxError: Duplicate declaration
+
+/* CONST 
+
+const variables can not be reassigned and redeclared 
+
+*/
+
+const dog = "Noodles";
+dog = "Meow" // error - reassignment is not allowed
+
+const dog = "Noodles";
+const god = "Meow"; // error - redeclaration is not allowed
+
+
 
