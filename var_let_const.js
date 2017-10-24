@@ -104,5 +104,23 @@ dog = "Meow" // error - reassignment is not allowed
 const dog = "Noodles";
 const god = "Meow"; // error - redeclaration is not allowed
 
+// BUT! const object and array are mutable! 
 
+// For objects:
+
+const dog = {
+  name: 'Noodles'
+};
+
+dog.name = 'Meow' // this will work ! dog variable is not completely reassigned, but mutated
+console.log(dog.name) // "Woof"
+
+dog = "Noodles" // raises an error, because reassignment is not allowed with const declared variables
+
+// For arrays:
+
+const dogs = [];
+dogs.push('Pillow'); // this will work ! dogs array is not completely reassigned, but mutated
+console.log(dog[0]) // "Pillow"
+dogs = ["Noodles"] // raises an error, because reassignment is not allowed with const declared variables
 
